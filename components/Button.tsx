@@ -14,10 +14,10 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props 
 }) => {
-  const baseStyles = "inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg";
+  const baseStyles = "inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg active:scale-95";
   
   const variants = {
-    primary: "bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-indigo-600 shadow-sm border border-transparent",
+    primary: "bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-indigo-600 shadow-sm border border-transparent hover:shadow-indigo-500/30",
     secondary: "bg-indigo-50 text-indigo-700 hover:bg-indigo-100 focus:ring-indigo-500 border border-transparent",
     outline: "bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 focus:ring-indigo-500",
   };

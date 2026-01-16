@@ -9,15 +9,20 @@ const RoleSelection: React.FC<RoleSelectionProps> = ({ onSelectRole }) => {
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
       <div className="w-full max-w-4xl">
-        <div className="text-center mb-12">
-          <div className="text-xl font-bold text-slate-900 tracking-tight mb-6">MentorX</div>
+        <div className="text-center mb-12 animate-fade-in-down opacity-0">
+          <div className="flex justify-center mb-6">
+            <span className="text-3xl font-bold text-slate-900 tracking-tight">MentorX</span>
+          </div>
           <h1 className="text-3xl md:text-4xl font-bold text-slate-900">How will you use MentorX?</h1>
           <p className="mt-4 text-slate-600 text-lg">Select your primary role to get started.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 max-w-3xl mx-auto">
           {/* Seeker Card */}
-          <div className="bg-white p-8 md:p-10 rounded-2xl border-2 border-slate-100 hover:border-indigo-600 hover:shadow-xl transition-all duration-300 group cursor-pointer flex flex-col" onClick={() => onSelectRole('seeker')}>
+          <div 
+            className="bg-white p-8 md:p-10 rounded-2xl border-2 border-slate-100 hover:border-indigo-600 hover:shadow-xl transition-all duration-300 group cursor-pointer flex flex-col animate-fade-in-up delay-100 opacity-0 transform hover:-translate-y-1" 
+            onClick={() => onSelectRole('seeker')}
+          >
             <div className="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               <User className="w-7 h-7 text-blue-600" />
             </div>
@@ -38,7 +43,10 @@ const RoleSelection: React.FC<RoleSelectionProps> = ({ onSelectRole }) => {
           </div>
 
           {/* Mentor Card */}
-          <div className="bg-white p-8 md:p-10 rounded-2xl border-2 border-slate-100 hover:border-indigo-600 hover:shadow-xl transition-all duration-300 group cursor-pointer flex flex-col" onClick={() => onSelectRole('mentor')}>
+          <div 
+            className="bg-white p-8 md:p-10 rounded-2xl border-2 border-slate-100 hover:border-indigo-600 hover:shadow-xl transition-all duration-300 group cursor-pointer flex flex-col animate-fade-in-up delay-200 opacity-0 transform hover:-translate-y-1" 
+            onClick={() => onSelectRole('mentor')}
+          >
             <div className="w-14 h-14 bg-indigo-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               <GraduationCap className="w-7 h-7 text-indigo-600" />
             </div>
@@ -59,7 +67,7 @@ const RoleSelection: React.FC<RoleSelectionProps> = ({ onSelectRole }) => {
           </div>
         </div>
         
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center animate-fade-in delay-300 opacity-0">
             <p className="text-sm text-slate-400">You can add another role to your profile later.</p>
         </div>
       </div>

@@ -6,8 +6,8 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
         
         <div className="flex items-center space-x-2">
-          <span className="text-lg font-bold text-slate-900">MentorX</span>
-          <span className="text-slate-400 text-sm">© {new Date().getFullYear()}</span>
+          <span className="text-xl font-bold text-slate-900 tracking-tight">MentorX</span>
+          <span className="text-slate-400 text-sm ml-2">© {new Date().getFullYear()}</span>
         </div>
 
         <div className="flex space-x-8">
